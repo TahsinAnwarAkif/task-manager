@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import dotenv from 'dotenv';
 import colors from 'colors';
 import {connectDB} from './config/db.js';
 import User from './models/User.js';
@@ -7,7 +6,6 @@ import {users} from './data/users.js';
 import {tasks} from './data/tasks.js';
 import Task from "./models/Task.js";
 
-dotenv.config();
 connectDB();
 
 const importData = async() => {
